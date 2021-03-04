@@ -1,23 +1,12 @@
-# Flutter Google Sign In using Firebase 
-![codemagic](https://api.codemagic.io/apps/5d636daaf5035821fb723bc3/5d636daaf5035821fb723bc2/status_badge.svg)
 
-<p align="center">
-  <img src="https://github.com/sbis04/sign_in_flutter/raw/master/Screenshot/login_cover.png">
-</p>
-
-### **Checkout my Medium article ["Flutter: Implementing Google Sign In"](https://medium.com/flutter-community/flutter-implementing-google-sign-in-71888bca24ed).**
 
 In this app, I have implemented **Google Sign In** using **Firebase** for both Android and iOS, fixing all the issues with the latest Flutter updates. To understand how to fix all the **Firebase** issues in **Flutter** make sure you check out my **Medium article**.
 
-> NOTE: The project is tested on **Flutter 1.20 (stable)** and using all the latest versions of the plugins.
+> NOTE: The project is tested on **Flutter 2.0 (stable)** and using all the latest versions of the plugins.
 
 ## Project versions
 
 There are three versions of this project available:
-
-* Simple Google Sign In ([master](https://github.com/sbis04/sign_in_flutter/tree/master))
-* Combined with Auto Login ([auto_login](https://github.com/sbis04/sign_in_flutter/tree/auto_login))
-* Combined with Local Authentication using Biometric ([local_auth](https://github.com/sbis04/sign_in_flutter/tree/local_auth))
 
 # Using this app
 If you want to clone and use this app, then you have to complete the following steps:
@@ -49,12 +38,6 @@ Now, you can run the app on your device using the command:
 flutter run
 ```
 
-# Screenshots
-
-<p align="left">
-  <img src="https://github.com/sbis04/sign_in_flutter/raw/master/Screenshot/login_screens.png">
-</p>
-
 # Plugins
 
 The plugins used in this project are: 
@@ -67,9 +50,9 @@ Add this to your package's pubspec.yaml file to use **Firebase** & **Google Sign
 
 ```yaml
 dependencies:
-  firebase_core: ^0.5.0
-  firebase_auth: ^0.18.0+1
-  google_sign_in: ^4.5.3
+  firebase_core: ^1.0.0
+  firebase_auth: ^1.0.0
+  google_sign_in: ^5.0.0
 ```
 Import using:
 
@@ -136,25 +119,3 @@ Future<void> signOutGoogle() async {
   print("User Signed Out");
 }
 ```
-
-# License
-
-Copyright (c) 2019 Souvik Biswas
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.

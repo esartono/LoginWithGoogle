@@ -1,4 +1,4 @@
-package com.example.sign_in_flutter;
+package com.example.sdmsmart;
 
 import io.flutter.embedding.android.FlutterActivity;
 

@@ -19,7 +19,7 @@
 // SOFTWARE.
 
 import 'package:flutter/material.dart';
-import 'package:sign_in_flutter/sign_in.dart';
+import 'package:sdmsmart/sign_in.dart';
 
 import 'first_screen.dart';
 
@@ -50,8 +50,8 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   Widget _signInButton() {
-    return OutlineButton(
-      splashColor: Colors.grey,
+    return OutlinedButton(
+      // splashColor: Colors.grey,
       onPressed: () {
         signInWithGoogle().then((result) {
           if (result != null) {
@@ -65,9 +65,9 @@ class _LoginPageState extends State<LoginPage> {
           }
         });
       },
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
-      highlightElevation: 0,
-      borderSide: BorderSide(color: Colors.grey),
+      // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
+      // highlightElevation: 0,
+      // borderSide: BorderSide(color: Colors.grey),
       child: Padding(
         padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
         child: Row(

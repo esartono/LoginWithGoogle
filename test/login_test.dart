@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:sign_in_flutter/login_page.dart';
+import 'package:sdmsmart/login_page.dart';
 
 void main() {
   Widget makeTestableWidget({Widget child}) {
@@ -15,7 +15,7 @@ void main() {
     await tester.pumpWidget(makeTestableWidget(child: loginScreen));
 
     expect(find.byType(FlutterLogo), findsOneWidget);
-    expect(find.byType(OutlineButton), findsOneWidget);
+    expect(find.byType(OutlinedButton), findsOneWidget);
     expect(find.text('Sign in with Google'), findsOneWidget);
 
     print('Found Flutter logo.');
